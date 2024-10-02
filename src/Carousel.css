@@ -1,0 +1,83 @@
+.cartao {
+  width: 100%;
+  max-width: 200px;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #30496a;
+  transition: background-color 0.3s, transform 0.3s, border-radius 0.3s;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.cartao:hover {
+  cursor: pointer;
+  background-color: #09090f;
+  transform: scale(1.1);
+  border-radius: 16px;
+  color: white;
+  flex-grow: 1;
+}
+
+.imagem-cartao {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.titulo-cartao {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.preco-cartao {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.checkbox-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox-container label {
+  color: white;
+  margin-left: 8px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.cards-container:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
+
+.comparativo-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.light-mode .comparativo-container {
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.dark-mode .comparativo-container {
+  background: #1a1a28;
+  background-image: linear-gradient(#171d25, #2e3a49);
+}
