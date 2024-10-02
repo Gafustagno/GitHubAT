@@ -263,20 +263,16 @@ export default function App() {
             <p>Gabriel Sá Fustagno - 2024</p>
             <div className={styles.toggleContainer}>
               <div className={styles.toggleSwitch} onClick={toggleDarkMode}>
-                <input type="checkbox" checked={isDarkMode} readOnly />
-                <span className={styles.slider}>
-                  <FaSun className={styles.iconLight} />
-                  <FaMoon className={styles.iconDark} />
-                </span>
+                {isDarkMode ? <FaSun size={24} /> : <FaMoon size={24} />}
               </div>
             </div>
           </footer>
         </div>
-      ) : showArquitetura ? (
-        <Arquitetura />
-      ) : (
-        <Comparativo selectedCards={selectedCards} />
-      )}
+      ) : null}
+
+      {showComparativo && <Comparativo selectedCards={selectedCards} />}
+
+      {showArquitetura && <Arquitetura />}
     </div>
   );
 }
