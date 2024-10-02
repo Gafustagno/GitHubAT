@@ -1,0 +1,47 @@
+.cartao {
+  width: 100%;
+  max-width: 200px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #30496a;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+.cartao:hover {
+  cursor: pointer;
+  background-color: #09090f;
+  color: white;
+}
+
+.imagem-cartao {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.titulo-cartao {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.preco-cartao {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.checkbox-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox-container label {
+  color: white;
+  margin-left: 8px;
+}

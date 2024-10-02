@@ -1,0 +1,252 @@
+body {
+  font-family: "DM Sans";
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #09090f;
+  color: white;
+}
+
+img {
+  height: 200px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  padding-bottom: 3px;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  color: #1a9fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  background: #1a1a28;
+  background-image: linear-gradient(#171d25, #2e3a49);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  font-family: "verdana";
+  font-weight: bold;
+  background: #171d25;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.compare-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #1a9fff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.compare-button:hover {
+  background-color: #000000;
+}
+
+@media (min-width: 768px) {
+  .cards-container {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cards-container {
+    padding: 0 20px;
+  }
+
+  .comparativo-card {
+    width: 30%;
+    max-width: 300px;
+  }
+}
+
+.dark-mode {
+  background-color: #09090f;
+  color: white;
+}
+
+.dark-mode .navbar,
+.dark-mode .footer {
+  background: linear-gradient(#171d25, #2f3843);
+}
+
+.light-mode {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.light-mode .navbar {
+  background: linear-gradient(#30496a, #ffffff);
+  color: black;
+}
+
+.light-mode .footer {
+  background: linear-gradient(#ffffff, #30496a);
+  color: black;
+}
+
+.light-mode .main {
+  background-color: #ffffff;
+  background-image: none;
+}
+
+.light-mode .compare-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.light-mode .compare-button:hover {
+  background-color: #0056b3;
+}
+
+.light-mode .cartao {
+  background-color: #ababab;
+  color: white;
+}
+
+.light-mode .hamburger-menu .hamburger-icon {
+  color: rgb(254, 254, 254);
+}
+
+.light-mode .nav-items .nav-item {
+  color: rgb(255, 255, 255);
+}
+
+.light-mode .compare-button:hover {
+  background-color: #000000;
+}
+
+.light-mode .comparativo-container {
+  background-color: linear-gradient(#ffffff, #30496a);
+  color: rgba(0, 0, 0, 0);
+}
+
+.light-mode .comparativo-card {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.carousel-container {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  font-size: 24px;
+  color: white;
+}
+
+.hamburger-icon:hover {
+  color: #1a9fff;
+}
+
+.nav-items-open {
+  display: block;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-image: linear-gradient(#171d25, #515760);
+    padding: 20px;
+  }
+
+  .nav-items.nav-items-open {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+}
+
+.dark-mode-toggle {
+  margin-left: 15px;
+}
+
+/* Estilos do menu hamburguer*/
+
+.hamburger-dropdown {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #2e3a49;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  width: 100%;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  padding: 8px 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #1a9fff;
+}
